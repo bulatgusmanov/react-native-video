@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="bottom"
     android:layoutDirection="ltr"
-    android:background="#CC000000"
+    android:background="#00000000"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingTop="4dp"
+       <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:background="#00000000"
         android:orientation="horizontal">
 
-      
         <FrameLayout
             android:id="@+id/exo_play_pause_container"
             android:layout_width="wrap_content"
@@ -26,14 +26,7 @@
             <ImageButton android:id="@id/exo_pause"
                 style="@style/ExoMediaButton.Pause"/>
         </FrameLayout>
-
-        <ImageButton android:id="@id/exo_ffwd"
-            style="@style/ExoMediaButton.FastForward"/>
-
-        <ImageButton android:id="@id/exo_next"
-            style="@style/ExoMediaButton.Next"/>
-
-    </LinearLayout>
+        </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -67,16 +60,17 @@
             android:paddingRight="4dp"
             android:includeFontPadding="false"
             android:textColor="#FFBEBEBE"/>
+
         <FrameLayout
             android:id="@+id/exo_fullscreen_button"
             android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="right">
 
             <ImageView
                 android:id="@+id/exo_fullscreen_icon"
-                android:layout_width="18dp"
-                android:layout_height="18dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
                 android:layout_gravity="center"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
@@ -84,5 +78,4 @@
 
         </FrameLayout>
     </LinearLayout>
-
 </LinearLayout>
